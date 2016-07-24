@@ -1,0 +1,179 @@
+
+
+
+
+Administrator@sandip-PC MINGW32 /
+$ pwd
+/
+
+Administrator@sandip-PC MINGW32 /
+$ cd D:
+
+Administrator@sandip-PC MINGW32 /d
+$ cd  test
+
+Administrator@sandip-PC MINGW32 /d/test
+$ ls
+hello-world/  Project23July/
+
+Administrator@sandip-PC MINGW32 /d/test
+$ cd Projtect23July
+bash: cd: Projtect23July: No such file or directory
+
+Administrator@sandip-PC MINGW32 /d/test
+$ cd /Projtect23July
+bash: cd: /Projtect23July: No such file or directory
+
+Administrator@sandip-PC MINGW32 /d/test
+$ cd Project23July
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July
+$ git clone https://github.com/Sandip5691/GitProject
+Cloning into 'GitProject'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July
+$ git branch
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July
+$ ls
+GitProject/
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July
+$ cd GitProject/
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ pwd
+/d/test/Project23July/GitProject
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git branch
+* master
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git  status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git --all
+Unknown option: --all
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git -- all
+Unknown option: --
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git branch -- all
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git branch --all
+  all
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git  branch
+  all
+* master
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/master
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git stash
+No local changes to save
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git pull origin master
+From https://github.com/Sandip5691/GitProject
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (master)
+$ git checkout -b  sandip_APIV_10002_Adding_basic_inforamtion
+Switched to a new branch 'sandip_APIV_10002_Adding_basic_inforamtion'
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git branch
+  all
+  master
+* sandip_APIV_10002_Adding_basic_inforamtion
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git status
+On branch sandip_APIV_10002_Adding_basic_inforamtion
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Branch_Start.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git add Branch_Start.txt
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git checkout  origin master
+error: pathspec 'master' did not match any file(s) known to git.
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/master
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git pull origin master
+From https://github.com/Sandip5691/GitProject
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git statsh
+git: 'statsh' is not a git command. See 'git --help'.
+
+Did you mean this?
+        stash
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git stash
+Saved working directory and index state WIP on sandip_APIV_10002_Adding_basic_inforamtion: 204e869 Initial commit
+HEAD is now at 204e869 Initial commit
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git branch
+  all
+  master
+* sandip_APIV_10002_Adding_basic_inforamtion
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git status
+On branch sandip_APIV_10002_Adding_basic_inforamtion
+nothing to commit, working tree clean
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$ git status
+On branch sandip_APIV_10002_Adding_basic_inforamtion
+nothing to commit, working tree clean
+
+Administrator@sandip-PC MINGW32 /d/test/Project23July/GitProject (sandip_APIV_10002_Adding_basic_inforamtion)
+$
